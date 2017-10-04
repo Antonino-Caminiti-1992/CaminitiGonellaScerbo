@@ -1,0 +1,71 @@
+(two hours each user)
+
+1) Proposta di divisione progetto in 3 livelli (1 per utente)
+
+I) Modalità di interfaccia 
+INPUT: 
+- Prenotazioni ( Data, Orario, Posto)
+- Locazione di Partenza
+- COSTUMIZZATIONE (Varie)
+PROPOSTE: Selezione a crocetta per mezzi preferiti
+
+
+OUTPUT: Opzione Migliore (Regola: Tempo Minore Possibile)
+
+2) 
+LIMITE: Scopo Regionale/Cittadino
+Scartare tragitti di Ritardo
+
+OPZIONE: Limite Tempo di Caricamento
+
+BONUS)
+PARTI EXTRA
+(1) COSTUMIZZAZIONE OPZIONALE PRANZO
+(2) Falcoltà di comprazze biglietti mezzi pubblici e trovare sistemi di noleggio più vicini
+
+-------------
+
+Service based on mobile and web applications, the target of people are just the users.
+- Server delle mappe e per le compagnie per i traggiti 
+e rintracciare servizi noleggi
+- Server per collegarsi a pagamenti / prenotazioni dei biglietti
+- Server Meteologici
+- Server Traffico
+- GPS per la posizione
+- Server Privato per registrazione preferenze utente/Altri dati utente (numero/e-mail)
+- SMTP server per convervare prenotazione biglietti
+- Server 
+
+
+GOALS
+[G1] - The user has to reach each scheduled location within a certain deadline 
+[G2] - The user can place default preferences
+[G3] - The user has to be allowed to edit the location and the time of each scheduled appointment or cancel them
+[G4] - The user has to be allowed to change the proposed travel by editing preferences
+[G5] - The user has to recieve notifications about changes of the schedule (ex. cancellations of public transports, excessive traffic)  and change schedule accordingly
+[G6] - When a ticket  is successfully booked or bought, the user is sent the ticket or the prenotation
+[G8] - The application has to keep track of booked tickets
+
+DOMAIN PROPERTIES
+* Restrizione geografica (regionale)
+* User has to register to the sistem 
+* GPS or our given position as input of departure 
+* For each user we assume we are given right informations from third part servers within a reasonable timeframe. (5 seconds?)
+* SERVER CALCULATIONS (SEE ABOVE)
+* User has has only one travel for each schedulds appointment.
+* One Travel Per One User at a determined time
+* The registered user is the one to make the scheduled travel 
+* The User should be notified
+* Limit of 5 minutes during users session
+* Two different users can't register themselves with the same datas (same username, same mobile number, same e-mail)
+* If the user is booking something, he has to pay before taking the transport
+* User can only make a schedule itinerary for oneself
+
+[??G9??] Resource control (Memory control, Booking control, etc.)
+
+
+
+
+
+COSTRAINTS
+* No More than 1 booking while scheduling. 
