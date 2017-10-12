@@ -1,0 +1,15 @@
+INTRODUCTION
+Description of the Given Problem
+We are going to project and implement a service based upon mobile and web application called ‘TravLander+’
+The System will allow the users to be able to
+·    Find the shortest available itinerary given the location of departure and destination, with real time modification in case of unforeseen circumstances
+·    Further customize said itinerary by stating their preferences of transport, and a lunch pause of at least half a hour in the time slot between 11:30 – 14:30 and customize other breaks by specifying how much the break should last and the given timeslot
+·    Buy and/or book tickets of public transports or locate the closest car/bike rental stores
+The users will have to register (by inserting a username and a password, said account will be tied to both a mobile phone and an e-mail address) to be able to employ the system for oneself have a set system of preferences included as a default (although customizable by each itinerary if found necessary)
+The main purpose will be to offer a quick efficient reliable application to schedule the quickest routes to be able to comply to all the user’s meetings within the limits of feasibility
+
+Actual System
+The user will be logging in with his username (or alternatively his e-mail and/or mobile phone) and a password. Given his set of default preference already set the first time, he will give as inputs the location of departure, the destination along with the time he should arrive to said destination.
+After that, he will also be able to customize the system by further setting his preferences (such as the maximum time he’d want to walk, his preferred means of transport, the optional lunch break  if within a certain timeslot…) and they will receive the shortest itinerary given these inputs.
+The user will be also able to have the further option to arrange the trip by buying/booking the ticket for public transport or locate the closest rental service if needed, once the itinerary have been set.
+The system will hold a private server to register the datas of each user
